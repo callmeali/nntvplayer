@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>NNTV Player</title>
+
+<link rel="stylesheet" href="nntvplayer/video-js.min.css"/>
+<link rel="stylesheet" href="nntvplayer/nntvplayer.css"/>
+<script src="https://www.nntv.cn/js/jquery.min.js"></script>
+<script type="text/javascript" src="nntvplayer/video.min.js"></script>
+<script type="text/javascript" src="nntvplayer/lang/zh-CN.js"></script>
+<script type="text/javascript" src="nntvplayer/nntvplayer.min.js"></script>
+<style>
+.contain-c {padding:10px;background-color:#DFDFDF;border:1px solid #999;margin:10px; }
+.contain-c code {font-size:12px;color:#666;}
+</style>
+
+</head>
+<body>
+<h1>老友网播放器</h1>
+<h2>快速开始</h2>
+<h2>播放器初始化方法</h2>
+<h4>方法1(推荐):用元素class指定nntvplayer来初始化，用标签属性data-option设置其初始化参数</h4>
+<p>代码示例</p>
+
+<div class="contain-c">
+<code>&lt;div class=&quot;nntvplayer&quot; data-option=&quot;videoid:3586274,width:320,height:240,autoplay:true&quot;&gt;&lt;/div&gt;</code>
+</div>
+
+<div class="nntvplayer" data-option="videoid:3586274,width:320,height:240,autoplay:false"></div>
+<p></p>
+
+<h4>方法2:使用jQuery选择器的nntvplayer方法，以对象形式传递参数</h4>
+<p>代码示例</p>
+<div class="contain-c">
+<code>&lt;div id=&quot;demo1&quot;&gt;&lt;/div&gt;<br/>
+&lt;script&gt;$(&#x27;#demo1&#x27;).nntvplayer({videoid:3586274,width:300,height:240,autoplay:false,poster:&#x27;http://img.nntv.cn/images/2018-8-6/5OdZ806_1533557854353_bzuMeVN_4.jpg&#x27;});&lt;/script&gt;</code>
+</div>
+
+<div id="demo1"></div>
+<script>$('#demo1').nntvplayer({videoid:3586274,width:300,height:240,autoplay:false,poster:'http://img.nntv.cn/images/2018-8-6/5OdZ806_1533557854353_bzuMeVN_4.jpg'});</script>
+<p></p>
+
+<h4>方法3:使用jQuery的nntvplayer方法，以对象形式传递参数，播放器容器直接在脚本的位置生成。</h4>
+<p>代码示例</p>
+
+<div class="contain-c">
+<code>&lt;script&gt;$.nntvplayer({source:&#x27;http://mvod.nntv.cn/vod/local/2018/08/06/5OdZ806_1533557204084_dN2aO3w_2666.mp4&#x27;,width:300,height:240,autoplay:false,loop:true});&lt;/script&gt;</code>
+</div>
+
+<script>$.nntvplayer({source:'http://mvod.nntv.cn/vod/local/2018/08/06/5OdZ806_1533557204084_dN2aO3w_2666.mp4',width:300,height:240,autoplay:false,loop:true});</script>
+<p></p>
+
+
+
+<h2>播放器初始化参数</h2>
+
+<p>source:视频URL地址</p>
+<p>值:字符串，与videoid两个必须指定一个</p>
+<br/>
+
+<p>videoid:老友网视频编号</p>
+<p>值:数字，source为空时必须。</p>
+<br/>
+
+<p>width:播放器宽度</p>
+<p>值:数字，单位px，默认640，可选。</p>
+<br/>
+
+<p>height:播放器高度</p>
+<p>值:数字，单位px，默认640，可选。</p>
+<br/>
+
+<p>autoplay:是否自动播放</p>
+<p>值:布尔型，true或false，默认true，可选。</p>
+<br/>
+
+<p>preload:是否预加载</p>
+<p>值:布尔型，true或false，默认true，可选。</p>
+<br/>
+
+<p>loop:是否循环</p>
+<p>值:布尔型，true或false，默认false，可选。</p>
+<br/>
+
+</body>
+</html>
