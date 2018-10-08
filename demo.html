@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <title>NNTV Player</title>
 
-<link rel="stylesheet" href="nntvplayer/video-js.min.css"/>
-<link rel="stylesheet" href="nntvplayer/nntvplayer.css"/>
 <script src="https://www.nntv.cn/js/jquery.min.js"></script>
-<script type="text/javascript" src="nntvplayer/video.min.js"></script>
-<script type="text/javascript" src="nntvplayer/lang/zh-CN.js"></script>
 <script type="text/javascript" src="nntvplayer/nntvplayer.min.js"></script>
 <style>
-.contain-c {padding:10px;background-color:#F7F7F7;border:1px solid #999;margin:10px; }
+.contain-c {padding:10px;background-color:#DFDFDF;border:1px solid #999;margin:10px; }
 .contain-c code {font-size:12px;color:#666;}
 </style>
 
 </head>
 <body>
+
+
+<div class="nntvplayer" data-option="source:'http://vjs.zencdn.net/v/oceans.mp4',width:320,height:240,autoplay:true,controls:true"></div>
+
 <h1>老友网播放器</h1>
 <h2>快速开始</h2>
 <h2>播放器初始化方法</h2>
@@ -27,7 +27,7 @@
 <code>&lt;div class=&quot;nntvplayer&quot; data-option=&quot;videoid:3586274,width:320,height:240,autoplay:true&quot;&gt;&lt;/div&gt;</code>
 </div>
 
-<div class="nntvplayer" data-option="videoid:3586274,width:320,height:240,autoplay:false"></div>
+<div class="nntvplayer" data-option="videoid:3586274,width:320,height:240,autoplay:true,controls:false"></div>
 <p></p>
 
 <h4>方法2:使用jQuery选择器的nntvplayer方法，以对象形式传递参数</h4>
