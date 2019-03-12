@@ -45,3 +45,9 @@ preload:是否预加载<br>
 
 loop:是否循环<br>
 值:布尔型，true或false，默认false，可选。
+
+lib:调用接口的视频库类型<br>
+值:字符串，cms 、 paike，默认cms，可选。
+
+fit:视频适应窗口的模式<br>
+值:字符串，contain、cover、fit，默认fit，可选。
