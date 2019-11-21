@@ -51,3 +51,6 @@ lib:调用接口的视频库类型<br>
 
 fit:视频适应窗口的模式<br>
 值:字符串，contain、cover、fit，默认fit，可选。
+
+bdtongji:开启百度统计功能
+值:布尔型，true或false，默认true
