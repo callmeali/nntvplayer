@@ -6,6 +6,7 @@
 .vjs-logo img {width:90px; height:30px;}
 .video-js {font-size:12px; overflow: hidden;}
 .video-js .vjs-control {width: 3em;}
+.video-js .vjs-seek-to-live-control {display:none;}
 .video-js .vjs-time-control {position:absolute; display:block;padding-left:0;padding-right:0;min-width:10px;user-select: none;}
 .video-js .vjs-remaining-time {display:none;}
 .video-js .vjs-duration {right:120px;width:40px;}
