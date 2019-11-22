@@ -1,18 +1,24 @@
+/**
+ * nntvplayer ÑשÊ½
+ * author lijunbin
+ */
 .vjs-logo {line-height: 100%;position:absolute; right:5px;width:76px; height:26px;background:url(img/logo.png);background-size:cover;margin-top:5px;}
 .vjs-logo img {width:90px; height:30px;}
 .video-js {font-size:12px; overflow: hidden;}
 .video-js .vjs-control {width: 3em;}
-.video-js .vjs-time-control {position:absolute; display:block;padding-left:0;padding-right:0;}
+.video-js .vjs-time-control {position:absolute; display:block;padding-left:0;padding-right:0;min-width:10px;user-select: none;}
 .video-js .vjs-remaining-time {display:none;}
-.video-js .vjs-duration {right:128px;width:50px;}
-.video-js .vjs-time-divider {right:178px;width:24px;text-align:center;}
-.video-js .vjs-current-time {right:202px;width:50px;}
+.video-js .vjs-duration {right:120px;width:40px;}
+.video-js .vjs-time-divider {right:160px;width:10px;text-align:center;}
+.video-js .vjs-current-time {right:170px;width:40px;}
 .video-js .vjs-time-tooltip {min-width:40px;}
+.video-js .vjs-playback-rate {width: 4em;}
 .video-js .vjs-fullscreen-control {position:absolute; right: 86px;}
 .video-js .vjs-progress-control{width: 100%;height: 12px;position: absolute;top:-8px;left:0;}
 .video-js .vjs-progress-control .vjs-progress-holder {margin: 0;}
 .video-js .vjs-bigplay-container {width:100%;height:100%;display:flex;align-items:center;justify-content:center;}
 .video-js .vjs-big-play-button {position:relative;border-radius: 0.75em; top:0; left:0;}
+.video-js .vjs-volume-panel.vjs-volume-panel-vertical {width:3em;}
 .video-js .vjs-ad {background-color: #000;width: 100%;height: 100%;position: absolute;top: 0;display: flex;align-items: center; z-index:2;}
 .vjs-ad video {width:100%; height:100%;}
 .vjs-ad-time {display:none;position: absolute;top: 0;right:0;padding: 10px 15px;font-size: 14px;}
@@ -22,3 +28,78 @@
 .vjs-contextmenu {width:100px;overflow: hidden;box-shadow: 1px 1px 2px #666;position: absolute;display:none;padding:5px;background-color:#F7F7F7;opacity:0.9;}
 .vjs-contextmenu div {padding:2px;font-size: 12px; color: #666;line-height:20px;cursor:default;}
 .vjs-contextmenu div.line {border-bottom: 1px solid #CCC;}
+
+
+/**
+ * videojs-qualityselector
+ * @version 0.0.4
+ * @copyright 2018 Emmanuel Alves <manel.pb@gmail.com>
+ * @license MIT
+ */
+.video-js.vjs-qualityselector {
+	display: block
+}
+
+.video-js .vjs-quality-container {
+	position: relative
+}
+
+.video-js .vjs-quality-container .vjs-brand-quality-link {
+	color: #fff;
+	text-decoration: none;
+	cursor: pointer;
+	line-height: 36px;
+	font-size: 16px;
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown {
+	position: absolute;
+	bottom: 36px;
+	background: rgba(0, 0, 0, 0.48);
+	transition: opacity 0.5s linear;
+	opacity: 0;
+	-webkit-transform: scaleY(0);
+	-o-transform: scaleY(0);
+	-ms-transform: scaleY(0);
+	transform: scaleY(0);
+	-webkit-transform-origin: bottom;
+	-o-transform-origin: bottom;
+	-ms-transform-origin: bottom;
+	transform-origin: bottom;
+	-webkit-transition: -webkit-transform 0.26s ease-out;
+	-o-transition: -o-transform 0.26s ease;
+	-ms-transition: -ms-transform 0.26s ease;
+	transition: transform 0.26s ease
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown.show {
+	z-index: 1; opacity : 1;
+	-webkit-transform: scaleY(1);
+	-o-transform: scaleY(1);
+	-ms-transform: scaleY(1);
+	transform: scaleY(1);
+	opacity: 1;
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown ul {
+	margin: 0;
+	padding: 0
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown ul li {
+	list-style: none;
+	margin: 0
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 5px 10px;
+	display: table;
+	width: 100%
+}
+
+.video-js .vjs-quality-container .vjs-quality-dropdown ul li.current a {
+	background: #FFF;
+	color: #2b333f;
+}

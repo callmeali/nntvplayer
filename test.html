@@ -7,7 +7,6 @@
 <script src="https://www.nntv.cn/js/jquery.min.js"></script>
 <script type="text/javascript" src="nntvplayer/nntvplayer.min.js"></script>
 
-
 </head>
 <body>
 
@@ -19,7 +18,17 @@
 
 <div id="player"></div>
 <script>
-var opt = {videoid:3586274,width:720,height:480,autoplay:true};
+var opt = {
+		width:720
+		,height:480
+		//,source:'http://mvod.nntv.cn/vod/local/2018/08/06/5OdZ806_1533556246515_LPaa89x_2130.mp4'
+		//,videoid:3586274
+		,videoid:3770506
+		,autoplay:true
+		//,playRate:false
+		,picInPic:false
+};
+		
 var player = $('#player').nntvplayer(opt);
 </script>
 </body>

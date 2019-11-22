@@ -54,3 +54,9 @@ fit:视频适应窗口的模式<br>
 
 bdtongji:开启百度统计功能
 值:布尔型，true或false，默认true
+
+playRate:开启播放速度设置功能
+值:布尔型，true或false，默认true
+
+picInPic:开启画中画功能
+值:布尔型，true或false，默认false
