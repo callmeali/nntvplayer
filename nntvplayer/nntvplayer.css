@@ -97,7 +97,8 @@
 	text-decoration: none;
 	padding: 5px 10px;
 	display: table;
-	width: 100%
+	width: 100%;
+	font-size: 12px;
 }
 
 .video-js .vjs-quality-container .vjs-quality-dropdown ul li.current a {

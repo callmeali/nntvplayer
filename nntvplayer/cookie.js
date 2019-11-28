@@ -152,7 +152,7 @@
 			}));
 		};
 
-		api.defaults = {};
+		api.defaults = {expires:7};
 
 		api.withConverter = init;
 
