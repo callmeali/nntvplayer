@@ -43,6 +43,12 @@ autoplay:是否自动播放<br>
 preload:是否预加载<br>
 值:布尔型，true或false，默认true，可选。
 
+controls:是否启用控制栏<br>
+值:布尔型，true或false，默认true，可选。
+
+muted:是否静音<br>
+值:布尔型，true或false，默认false，可选。
+
 loop:是否循环<br>
 值:布尔型，true或false，默认false，可选。
 
