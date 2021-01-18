@@ -46,6 +46,9 @@ preload:是否预加载<br>
 controls:是否启用控制栏<br>
 值:布尔型，true或false，默认true，可选。
 
+poster:播放视频前显示的图片<br>
+值:字符串，图片的URL链接地址，可选。
+
 muted:是否静音<br>
 值:布尔型，true或false，默认false，可选。
 
@@ -58,11 +61,11 @@ lib:调用接口的视频库类型<br>
 fit:视频适应窗口的模式<br>
 值:字符串，contain、cover、fit，默认fit，可选。
 
-bdtongji:开启百度统计功能
+bdtongji:开启百度统计功能<br>
 值:布尔型，true或false，默认true
 
-playRate:开启播放速度设置功能
+playRate:开启播放速度设置功能<br>
 值:布尔型，true或false，默认true
 
-picInPic:开启画中画功能
+picInPic:开启画中画功能<br>
 值:布尔型，true或false，默认false
